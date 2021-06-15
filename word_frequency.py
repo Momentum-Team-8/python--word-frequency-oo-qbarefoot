@@ -1,3 +1,4 @@
+import re
 
 STOP_WORDS = [
     'a', 'an', 'and', 'are', 'as', 'at', 'be', 'by', 'for', 'from', 'has',
@@ -8,7 +9,7 @@ STOP_WORDS = [
 
 class FileReader:
     def __init__(self, filename):
-        self.filename = filename
+        self.book = filename
         
 
     def read_contents(self):
@@ -19,15 +20,15 @@ class FileReader:
         """
         # raise NotImplementedError("FileReader.read_contents")
 
-        with open(self.filename) as document:
+        with open(self.book) as document:
             text = document.read().lower()
             print (text)
 
 
 class WordList:
     def __init__(self, text):
-        self.text = text
-        pass
+        self.text 
+        
 
     def extract_words(self):
         """
